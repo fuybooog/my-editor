@@ -16,11 +16,11 @@ async function bootstrap() {
   );
 
   app.enableCors({
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5273'],
     credentials: true,
   });
 
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 3200;
   await app.listen(port);
   console.log(`Server running on http://localhost:${port}`);
 }

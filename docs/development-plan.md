@@ -433,8 +433,8 @@ type FieldValue = string | number | string[] | null;
 **验收标准：**
 - `pnpm install` 无错误
 - `pnpm build` 三个包均构建成功
-- `pnpm dev` 同时启动前端 (5173) 和后端 (3000)
-- 访问 `http://localhost:3000/api/health` 返回 `{ status: "ok" }`
+- `pnpm dev` 同时启动前端 (5273) 和后端 (3200)
+- 访问 `http://localhost:3200/api/health` 返回 `{ status: "ok" }`
 
 ---
 
@@ -524,7 +524,7 @@ type FieldValue = string | number | string[] | null;
 
 **任务清单：**
 - [ ] 安装前端依赖（antd, react-router-dom, @tanstack/react-query, axios 等）
-- [ ] 配置 Vite proxy（/api → localhost:3000）
+- [ ] 配置 Vite proxy（/api → localhost:3200）
 - [ ] 创建 `BasicLayout.tsx`（Ant Design Layout + Sider 菜单）
 - [ ] 配置 React Router 路由表
 - [ ] 创建 axios 实例 + 响应拦截器
@@ -727,8 +727,8 @@ pnpm --filter server seed
 
 # 启动开发服务
 pnpm dev
-# 前端: http://localhost:5173
-# 后端: http://localhost:3000
+# 前端: http://localhost:5273
+# 后端: http://localhost:3200
 ```
 
 ### 9.3 环境变量（packages/server/.env）

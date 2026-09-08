@@ -35,8 +35,8 @@ pnpm --filter @my-editor/server migration:run
 pnpm dev
 ```
 
-- 前端：http://localhost:5173
-- 后端：http://localhost:3000
+- 前端：http://localhost:5273
+- 后端：http://localhost:3200
 
 ## 项目结构
 
